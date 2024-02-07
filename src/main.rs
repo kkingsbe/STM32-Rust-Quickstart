@@ -20,12 +20,12 @@ fn main() -> ! {
 
     loop {
         //led.set_high();
-        for _ in 0..1_000_000 {
+        for _ in 0..1_000_0 {
             led.set_low();
             i = i + 1;
         }
 
-        for _ in 0..1_000_000 {
+        for _ in 0..1_000_0 {
             led.set_high();
         }
     }

@@ -27,7 +27,7 @@
         "label": "Debug Flash",
         "type": "shell",
         "command": "cargo",
-        "args": ["flash", "--chip", "stm32f411ceux", "--debug"],
+        "args": ["flash", "--chip", "stm32f411ceux"],
         "group": {
           "kind": "build",
           "isDefault": true
@@ -44,6 +44,12 @@
           "isDefault": true
         },
         "problemMatcher": []
+      },
+      {
+        "label": "Host Info",
+        "type": "shell",
+        "command": "probe-rs-cli",
+        "args": ["info"]
       }
     ]
 }
