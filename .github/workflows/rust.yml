@@ -16,5 +16,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Install dependencies
+      run: cargo install probe-rs --features cli
     - name: Build
       run: cargo build --verbose
