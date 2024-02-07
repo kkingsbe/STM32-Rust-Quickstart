@@ -18,7 +18,11 @@ jobs:
     - uses: actions/checkout@v3
     - name: Install Libusb
       run: sudo apt install -y pkg-config libusb-1.0-0-dev libftdi1-dev libudev-dev libssl-dev
-    - name: Install dependencies
+    - name: Install Target
+      run: rustup target install thumbv7m-none-eabi
+    - name: Install cargo-flash
+      run: cargo install cargo-flash
+    - name: Install probe-rs
       run: cargo install probe-rs --features cli
     - name: Build
       run: cargo build --verbose
