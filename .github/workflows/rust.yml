@@ -20,8 +20,6 @@ jobs:
       run: sudo apt install -y pkg-config libusb-1.0-0-dev libftdi1-dev libudev-dev libssl-dev
     - name: Install Target
       run: rustup target install thumbv7m-none-eabi
-    - name: Install cargo-flash
-      run: cargo install cargo-flash
     - name: Install probe-rs
       run: cargo install probe-rs --features cli
     - name: Build
