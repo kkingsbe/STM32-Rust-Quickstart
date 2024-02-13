@@ -1,11 +1,13 @@
 ## Debugging:
 1. Install VSCode
-2. Install `probe-rs` with the following commands:
+2. Install `cargo-flash` with the following command:
+   - `cargo install cargo-flash`
+4. Install `probe-rs` with the following commands:
    - `cargo install probe-rs`
    - `cargo install probe-rs-cli`
-3. Add the neccesary build target with the following command:
+5. Add the neccesary build target with the following command:
     - `rustup target install thumbv7m-none-eabi`
-4. Add the `Debugger for probe-rs` extension to vscode
+6. Add the `Debugger for probe-rs` extension to vscode
 4. The rest "should" already be setup & work. You can add a new breakpoint by clicking on the left margin next to any line of code.
 
 ## Setting up debugging for a new project
