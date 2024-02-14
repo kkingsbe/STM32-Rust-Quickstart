@@ -1,7 +1,9 @@
-This repository is intended to serve as a template repo for easily getting up & running with writing Rust for STM-32 microprocessors. It includes the following:
+This repository is intended to serve as a template repo for easily getting up & running with writing Rust for STM-32 microprocessors.
+## Features
 - Flashing & debugging support (with breakpoints) through `probe-rs`
 - Ready-made tasks & launch scripts
 - A Github CI workflow for automatically building the repo on each commit
+- Detailed instructions for getting the entire toolchain up & running
 
 ## Debugging:
 1. Install VSCode
