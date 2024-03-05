@@ -6,15 +6,16 @@ This repository is intended to serve as a template repo for easily getting up & 
 - Detailed instructions for getting the entire toolchain up & running
 
 ## Debugging:
-1. Install VSCode
-2. Install `cargo-flash` with the following command:
+1. Install the ST-Link drivers [here](https://www.st.com/en/development-tools/stsw-link009.html)
+2. Install VSCode
+3. Install `cargo-flash` with the following command:
    - `cargo install cargo-flash`
-3. Install `probe-rs` with the following command:
+4. Install `probe-rs` with the following command:
    - `cargo install probe-rs --locked --features cli`
-4. Add the neccesary build target with the following command:
+5. Add the neccesary build target with the following command:
     - `rustup target install thumbv7m-none-eabi`
-5. Add the `Debugger for probe-rs` extension to vscode
-6. The rest "should" already be setup & work. You can add a new breakpoint by clicking on the left margin next to any line of code.
+6. Add the `Debugger for probe-rs` extension to vscode
+7. The rest "should" already be setup & work. You can add a new breakpoint by clicking on the left margin next to any line of code.
 
 ## Setting up debugging for a new project
 To set up debugging within a new project, you can use the `launch.json` and `tasks.json` files as a template. The main important points to remember are the following:
